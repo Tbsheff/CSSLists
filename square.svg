@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg viewBox="-100 -100 200 200" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><defs>
+<filter style="color-interpolation-filters:sRGB" id="sq" x="-0.1" y="-0.1" height="1.2" width="1.2">
+<feFlood flood-color="red" result="result8"/>
+<feFlood flood-color="#FF8000" in="SourceGraphic" result="result9"/>
+<feFlood flood-color="#ff0" in="SourceGraphic" result="result11"/>
+<feFlood flood-color="lime" in="SourceGraphic" result="result13"/>
+<feFlood flood-color="cyan" in="SourceGraphic" result="result15"/>
+<feFlood flood-color="#00F" in="SourceGraphic" result="result17"/>
+<feFlood flood-color="#f0f" in="SourceGraphic" result="result19" />
+<feMorphology in="SourceGraphic" radius="14.29" result="result10" />
+<feMorphology in="SourceGraphic" radius="28.57" result="result12" />
+<feMorphology in="SourceGraphic" radius="42.86" result="result14" />
+<feMorphology in="SourceGraphic" radius="57.14" result="result16" />
+<feMorphology in="SourceGraphic" radius="71.43" result="result18" />
+<feMorphology in="SourceGraphic" radius="85.71" result="result1"/>
+<feComposite operator="in" in="result8" in2="SourceGraphic" result="result20" />
+<feComposite in2="result10" result="result2" operator="in" in="result9" />
+<feComposite in2="result12" result="result3" in="result11" operator="in"/>
+<feComposite in2="result14" result="result4" operator="in" in="result13"/>
+<feComposite in2="result16" result="result5" in="result15" operator="in"/>
+<feComposite in2="result18" result="result6" operator="in" in="result17"/>
+<feComposite in2="result1" result="result7" operator="in" in="result19"/>
+<feMerge id="feMerge76"><feMergeNode in="result20"/><feMergeNode in="result2"/><feMergeNode in="result3"/><feMergeNode in="result4"/><feMergeNode in="result5"/><feMergeNode in="result6"/><feMergeNode in="result7"/></feMerge></filter></defs>
+<path style="filter:url(#sq)" d="m 100,-100 v 200 h -200 v -200 z"/></svg>
